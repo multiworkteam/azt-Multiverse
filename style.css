@@ -92,5 +92,11 @@ p.bold {
     align-items: center;
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    border: 1px solid var(--main);
+}
+
+.content a {
+    border: none;
+    outline: none;
+    color: aliceblue;
 }
