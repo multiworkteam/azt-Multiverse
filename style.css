@@ -1,0 +1,96 @@
+:root {
+    --main: rgb(0, 65, 120);
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: rgb(215, 215, 215);
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(15, 15, 15, 1);
+    user-select: none;
+}
+
+.menu-container .left {
+    position: absolute;
+    display: flex;
+    left: 25px;
+    gap: 10px;
+}
+
+p.lighter {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+p.medium {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p.bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-container .right {
+    position: absolute;
+    display: flex;
+    right: 25px;
+    gap: 10px;
+}
+
+.menu-container .right a {
+    border-bottom: 1px solid white;
+}
+
+.menu-container .right .nav {
+    position: relative;
+    right: 0;
+    display: flex;
+    color: rgb(215, 215, 215);
+    transition: 0.2s all;
+}
+
+.menu-container .right .nav:hover {
+    color: var(--main);
+}
+
+.header {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
