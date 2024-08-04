@@ -2,6 +2,10 @@
     --main: rgb(0, 65, 120);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Sarabun', sans-serif;
     position: relative;
@@ -11,7 +15,15 @@ body {
     margin: 0;
     overflow: hidden;
     color: rgb(215, 215, 215);
-    box-sizing: border-box;
+}
+
+.wall {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100.0vw;
+    height: 100.0vh;
+    z-index: -1;
 }
 
 .container {
@@ -21,8 +33,6 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
-    /* justify-content: center; */
-    background-color: rgba(50, 50, 50, 0.5);
 }
 
 .menu-container {
@@ -81,18 +91,46 @@ p.bold {
     color: var(--main);
 }
 
-.header {
+.logo {
     position: relative;
+    width: 50vh;
+    user-select: none;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .content {
     position: relative;
+    display: grid;
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* border: 1px solid var(--main); */
+}
+
+.con1 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--main);
+    width: fit-content;
+    height: fit-content;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(15, 15, 15, 0.5);
+    border-radius: 2.0vh;
 }
 
 .content a {
