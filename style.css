@@ -17,12 +17,30 @@ body {
     color: rgb(215, 215, 215);
 }
 
+::-webkit-scrollbar {
+    width: 1vh;
+    border-radius: 0;
+    transition: 0.2s all;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 0;
+}
+
 .wall {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100.0vw;
-    height: 100.0vh;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 16 9;
     z-index: -1;
 }
 
@@ -39,9 +57,12 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 10px;
     gap: 10px;
-    width: 100%;
-    height: 50px;
+    min-width: 950px;
+    width: 95%;
+    height: 45px;
+    border-radius: 1.0vh;
     background-color: rgba(15, 15, 15, 1);
     user-select: none;
 }
